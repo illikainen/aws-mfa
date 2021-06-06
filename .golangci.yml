@@ -1,0 +1,19 @@
+---
+linters:
+  enable-all: true
+  disable:
+    - exhaustivestruct
+    - forbidigo
+    - goerr113
+    - gomnd
+    - interfacer
+    - maligned
+    - nlreturn
+    - scopelint
+    - wrapcheck
+    - wsl
+
+linters-settings:
+  lll:
+    line-length: 100
+    tab-width: 8

@@ -1,0 +1,17 @@
+{
+    "name": "aws-mfa",
+    "build": {
+        "dockerfile": "devcontainer.dockerfile",
+        "context": ".."
+    },
+    "remoteUser": "dev",
+    "otherPortsAttributes": {
+        "onAutoForward": "ignore"
+    },
+    "mounts": [
+        "source=${env:HOME}${env:USERPROFILE}/.aws,target=/home/dev/.aws,type=bind"
+    ],
+    "extensions": [
+        "golang.go"
+    ]
+}
